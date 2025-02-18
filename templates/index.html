@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirror Mirror App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Mirror Mirror App</h1>
+
+    <!-- Camera feed -->
+    <video id="video" autoplay></video>
+
+    <!-- Buttons for user actions -->
+    <button id="startListening">Start Listening</button>
+    <p id="status">Say: "Mirror Mirror"</p>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
