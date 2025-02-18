@@ -31,7 +31,7 @@ def save_audio():
         model="gemini-2.0-flash",
         contents=[
             """For the following audio file, if the content is related to technical topics then explain it in a short informative format which is described in a sarcastic manner with satire.
-            If the content is related to non-technical topics then make the informative response hurmourous in an satire, sarcastic, mean and rude manner while keeping it short.""",
+            If the content is related to non-technical topics then make the informative response hurmourous in a sarcastic manner with satire while keeping it short.""",
             genai.types.Part.from_bytes(
                 data=audio_data,
                 mime_type='audio/mp3'
